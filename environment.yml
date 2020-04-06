@@ -1,0 +1,7 @@
+name: escript-environment
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - matplotlib
+  - esys-escript
