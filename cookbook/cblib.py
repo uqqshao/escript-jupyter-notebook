@@ -29,6 +29,7 @@ from esys.escript import inf,sup
 from esys.escript.pdetools import Locator
 import numpy as np
 import pylab as pl
+from scipy import interpolate
 
 try:
     from mpl_toolkits.natgrid import _natgrid
@@ -57,7 +58,8 @@ def toRegGrid(u, nx=50, ny=50):
    yi = np.linspace(inf(xx[1]),sup(xx[1]),ny)
 
    # interpolate u to grid
-   zi = pl.matplotlib.mlab.griddata(coordX,coordY,utemp,xi,yi, interp='linear')
+   #zi = pl.matplotlib.mlab.griddata(coordX,coordY,utemp,xi,yi, interp='linear')
+   zi = interpolate.griddata((coordX,coordY),utemp,(xi[None,:],yi[:,None]), method='linear')
    return xi, yi, zi
 
 def subsample(u, nx=50, ny=50):
