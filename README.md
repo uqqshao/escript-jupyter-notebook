@@ -4,4 +4,4 @@
   - Jupyter Notebook documentation: https://jupyter-notebook.readthedocs.io/en/stable/ 
 
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/uqqshao/escript-jupyter-notebook.git/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/uqqshao/esys-escript-jupyter-notebook.git/master)
